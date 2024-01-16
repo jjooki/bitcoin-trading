@@ -1,0 +1,65 @@
+{
+    "quotation": {
+        "ticks": {
+            "endpoint": "/trades/ticks",
+            "method": "get"
+        },
+        "candle": {
+            "minute": {
+                "endpoint": "/candles/minutes/{unit}",
+                "method": "get"
+            },
+            "day": {
+                "endpoint": "/candles/days",
+                "method": "get"
+            },
+            "주캔들": {
+                "endpoint": "/candles/weeks",
+                "method": "get"
+            },
+            "month": {
+                "endpoint": "/candles/months",
+                "method": "get"
+            }
+        },
+        "market": {
+            "endpoint": "/market/all",
+            "method": "get"
+        },
+        "price": {
+            "endpoint": "/ticker",
+            "method": "get"
+        },
+        "orderbook": {
+            "endpoint": "/orderbook",
+            "method": "get"
+        }
+    },
+    "exchange": {
+        "account": {
+            "endpoint": "/accounts",
+            "method": "get"
+        },
+        "order_chance": {
+            "endpoint": "/orders/chance",
+            "method": "get"
+        },
+        "individual_order": {
+            "endpoint": "/orders",
+            "method": "get"
+        },
+        "주문리스트조회": {
+            "endpoint": "/orders",
+            "method": "get"
+        },
+        "주문하기": {
+            "endpoint": "/orders",
+            "method": "post"
+        },
+        "주문취소하기": {
+            "endpoint": "/order",
+            "method": "delete"
+        }
+    }
+
+}
