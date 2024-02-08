@@ -41,7 +41,7 @@ class Myupbit:
         
         response = requests.request(method, self.server_url, params=params, headers=headers)
         assert response.status_code == 200, "Error: {}".format(response.json())
-        return response
+        return response.json()
     
     def quotation_request(self, endpoint: str, params: dict=None):
         headers = {"accept": "application/json"}
@@ -54,5 +54,4 @@ class Myupbit:
             
         assert response.status_code == 200, "Error: {}".format(response.json())
         
-        return response
-        
+        return response.json()
